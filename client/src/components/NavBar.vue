@@ -9,6 +9,7 @@
               'nav-logo': true,
               'active-link': isActive('/'),
             }"
+            @click="closeMenu"
           >
             <img src="/favicon.ico" alt="favicon" />
           </router-link>
@@ -369,9 +370,12 @@ nav {
 }
 
 @media (max-width: 576px) {
+  nav {
+    padding: 5px 0;
+  }
   .nav-wrap {
     width: 100%;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .nav-serve .nav-main-logo {
@@ -384,6 +388,9 @@ nav {
   .nav-wrap a,
   .nav-wrap button {
     font-size: 0.8em;
+  }
+  .nav-wrap .nav-menubar {
+    margin-top: 68px;
   }
 }
 </style>
